@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #packages
     'rest_framework',
+    'silk',
 
     #apps
     'api',
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'
